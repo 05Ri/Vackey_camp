@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<title>회사 소개 - 조직도</title>
+<!-- Vertical Button-->
+<div class="btn-group-vertical" role="group" style="float:left; margin-right:10px">
+    <a type="button" class="btn btn-secondary" href="/company/greeting/">인사말</a>
+    <a type="button" class="btn btn-secondary active" href="/company/members/">조직도</a>
+    <a type="button" class="btn btn-secondary" href="/company/visit/">찾아오시는 길</a>
+</div>
+<!-- Content Row-->
+<div class="row gx-4 gx-lg-5">
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/300x300/dee2e6/6c757d.jpg" alt="..." />
+                <h2 class="card-title my-3">대표 이사</h2>
+                <p class="card-text">코대표</p>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/300x300/dee2e6/6c757d.jpg" alt="..." />
+                <h2 class="card-title my-3">디지털마케팅부</h2>
+                <p class="card-text">코현업</p>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/300x300/dee2e6/6c757d.jpg" alt="..." />
+                <h2 class="card-title my-3">IT 본부</h2>
+                <p class="card-text">코신입</p>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

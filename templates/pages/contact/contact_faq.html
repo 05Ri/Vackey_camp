@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<title>상품 소개 - 전체 상품</title>
+<title>문의 - 자주 묻는 질문</title>
 <!-- Vertical Button-->
 <div class="btn-group-vertical" role="group" style="float:left; margin-right:10px">
-    <a type="button" class="btn btn-secondary active" href="/mysite/">전체 상품</a>
-    <a type="button" class="btn btn-secondary" href="/product/popular/">인기 상품</a>
-    <a type="button" class="btn btn-secondary" href="/product/sale/">할인 상품</a>
+    <a type="button" class="btn btn-secondary active" href="/contact/FAQ/">FAQ</a>
+    <a type="button" class="btn btn-secondary" href="/contact/QnA/">질문 및 상담</a>
+    <a type="button" class="btn btn-secondary" href="/contact/us/">Contact Us</a>
 </div>
 <!-- Heading Row-->
 {% if content_list %}
@@ -13,8 +13,8 @@
 <div class="row gx-4 gx-lg-5 align-items-center my-5">
     <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/600x300/dee2e6/6c757d.jpg" alt="..." /></div>
     <div class="col-lg-5">
-        <h3><a class="font-weight-dark" href="{% url 'detail' content.id %}">{{ content.title }}</a></h3>
-        <p>{{ content.content | truncatewords:30 }}</p>
+        <h3><a class="font-weight-dark" href="/mysite/{{ content.id }}/">{{ content.title }}</a></h3>
+        <p>{{ content.content }}</p>
         <a class="btn btn-primary" href="#!">좋아요 ♥</a>
     </div>
 </div>

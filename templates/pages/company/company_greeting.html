@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<title>회사 소개 - 인사말</title>
+<!-- Vertical Button-->
+<div class="btn-group-vertical" role="group" style="float:left; margin-right:10px">
+    <a type="button" class="btn btn-secondary active" href="/company/greeting/">인사말</a>
+    <a type="button" class="btn btn-secondary" href="/company/members/">조직도</a>
+    <a type="button" class="btn btn-secondary" href="/company/visit/">찾아오시는 길</a>
+</div>
+<!-- Heading Row-->
+<div class="row gx-4 gx-lg-5 align-items-center my-5">
+    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/350x500/dee2e6/6c757d.jpg" alt="..." /></div>
+    <div class="col-lg-5">
+        <h1 class="font-weight-light">인사말</h1>
+        <p>안녕하십니까? A회사 대표, 코대표입니다.</p>
+    </div>
+</div>
+{% endblock %}
